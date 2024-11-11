@@ -10,4 +10,4 @@ function toggleBox(boxNumber) {
       box.classList.add('expanded');
     }
   }
-  
+

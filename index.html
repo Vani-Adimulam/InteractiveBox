@@ -1,68 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Boxes</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="box" id="box1" onclick="toggleBox(1)">
-      <h2>Top Box</h2>
-      <div class="options">
-        <p>Select Color:</p>
-        <div class="colors">
-          <span class="color-option" style="background-color: red;"></span>
-          <span class="color-option" style="background-color: blue;"></span>
-          <span class="color-option" style="background-color: green;"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="divider">
+        <hr />
+        <span class="span">Bundle & Save</span>
+        <hr />
+      </div>
+      <div class="box" id="box1" onclick="toggleBox(1)">
+        <div class="firstbox">
+            <div style="display: flex; flex-direction: row;">
+          <input type="radio" />
+          <div style="margin-left: 25px;">
+            <h4>1 Pair</h5>
+            <h5>DKK 195.00</h5>
+          </div>
         </div>
-        <p>Select Size:</p>
-        <div class="sizes">
-          <button class="size-option">Small</button>
-          <button class="size-option">Medium</button>
-          <button class="size-option">Large</button>
+          <p>50% OFF</p>
+        </div>
+        <br/>
+        <div class="options">
+          <!-- <p>Select Color:</p>
+          <div class="colors">
+            <span class="color-option" style="background-color: red"></span>
+            <span class="color-option" style="background-color: blue"></span>
+            <span class="color-option" style="background-color: green"></span>
+          </div> -->
+          <!-- <p>Select Size:</p> -->
+          <!-- <div class="sizes">
+            <button class="size-option">Small</button>
+            <button class="size-option">Medium</button>
+            <button class="size-option">Large</button>
+          </div> -->
+          
+          <p><span class="span1">Size</span>Colour</p>
+          <div>
+          <label for="options" class="select">#1</label>
+            <select id="options" name="options">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            </select>
+            <label for="options" class="selectright"></label>
+            <select id="options" name="options">
+            <option value="option1">Colour</option>
+            <option value="option2">Colour</option>
+            <option value="option3">Colour</option>
+            </select>
+        </div>
+        <div>
+            <label for="options" class="select">#1</label>
+              <select id="options" name="options">
+              <option value="option1">S</option>
+              <option value="option2">M</option>
+              <option value="option3">L</option>
+              </select>
+              <label for="options" class="selectright"></label>
+              <select id="options" name="options">
+              <option value="option1">Colour</option>
+              <option value="option2">Colour</option>
+              <option value="option3">Colour</option>
+              </select>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="box" id="box2" onclick="toggleBox(2)">
-      <h2>Middle Box</h2>
-      <div class="options">
-        <p>Select Color:</p>
-        <div class="colors">
-          <span class="color-option" style="background-color: orange;"></span>
-          <span class="color-option" style="background-color: purple;"></span>
-          <span class="color-option" style="background-color: pink;"></span>
+      <div class="box" id="box2" onclick="toggleBox(2)">
+        <div class="firstbox">
+            <div style="display: flex; flex-direction: row;">
+          <input type="radio" />
+          <div style="margin-left: 25px;">
+            <h4>2 Pair</h5>
+            <h5>DKK 345.00</h5>
+          </div>
         </div>
-        <p>Select Size:</p>
-        <div class="sizes">
-          <button class="size-option">Small</button>
-          <button class="size-option">Medium</button>
-          <button class="size-option">Large</button>
+        <div style="margin-top: 15px;"><p><del>DKK 195.00</del></p></div>
+          <div>
+            <p><b style="color: #00693E;">Most Popular</b></p>
+          <p style="text-align: end;">40% OFF</p>
+
+          </div>
+        </div>
+        <br/>
+        <div class="options">
+          <!-- <p>Select Color:</p>
+          <div class="colors">
+            <span class="color-option" style="background-color: red"></span>
+            <span class="color-option" style="background-color: blue"></span>
+            <span class="color-option" style="background-color: green"></span>
+          </div> -->
+          <!-- <p>Select Size:</p> -->
+          <!-- <div class="sizes">
+            <button class="size-option">Small</button>
+            <button class="size-option">Medium</button>
+            <button class="size-option">Large</button>
+          </div> -->
+          
+          <p><span class="span1">Size</span>Colour</p>
+          <div>
+          <label for="options" class="select">#1</label>
+            <select id="options" name="options">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            </select>
+            <label for="options" class="selectright"></label>
+            <select id="options" name="options">
+            <option value="option1">Colour</option>
+            <option value="option2">Colour</option>
+            <option value="option3">Colour</option>
+            </select>
+        </div>
+        <div>
+            <label for="options" class="select">#1</label>
+              <select id="options" name="options">
+              <option value="option1">S</option>
+              <option value="option2">M</option>
+              <option value="option3">L</option>
+              </select>
+              <label for="options" class="selectright"></label>
+              <select id="options" name="options">
+              <option value="option1">Colour</option>
+              <option value="option2">Colour</option>
+              <option value="option3">Colour</option>
+              </select>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="box" id="box3" onclick="toggleBox(3)">
-      <h2>Bottom Box</h2>
-      <div class="options">
-        <p>Select Color:</p>
-        <div class="colors">
-          <span class="color-option" style="background-color: yellow;"></span>
-          <span class="color-option" style="background-color: brown;"></span>
-          <span class="color-option" style="background-color: black;"></span>
+      <div class="box" id="box3" onclick="toggleBox(3)">
+        <div class="firstbox">
+            <div style="display: flex; flex-direction: row;">
+          <input type="radio" />
+          <div style="margin-left: 25px;">
+            <h4>3 Pair</h5>
+            <h5>DKK 528.00</h5>
+          </div>
         </div>
-        <p>Select Size:</p>
-        <div class="sizes">
-          <button class="size-option">Small</button>
-          <button class="size-option">Medium</button>
-          <button class="size-option">Large</button>
+          <p>60% OFF</p>
+        </div>
+        <br/>
+        <div class="options">
+          <!-- <p>Select Color:</p>
+          <div class="colors">
+            <span class="color-option" style="background-color: red"></span>
+            <span class="color-option" style="background-color: blue"></span>
+            <span class="color-option" style="background-color: green"></span>
+          </div> -->
+          <!-- <p>Select Size:</p> -->
+          <!-- <div class="sizes">
+            <button class="size-option">Small</button>
+            <button class="size-option">Medium</button>
+            <button class="size-option">Large</button>
+          </div> -->
+          
+          <p><span class="span1">Size</span>Colour</p>
+          <div>
+          <label for="options" class="select">#1</label>
+            <select id="options" name="options">
+            <option value="option1">S</option>
+            <option value="option2">M</option>
+            <option value="option3">L</option>
+            </select>
+            <label for="options" class="selectright"></label>
+            <select id="options" name="options">
+            <option value="option1">Colour</option>
+            <option value="option2">Colour</option>
+            <option value="option3">Colour</option>
+            </select>
+        </div>
+        <div>
+            <label for="options" class="select">#1</label>
+              <select id="options" name="options">
+              <option value="option1">S</option>
+              <option value="option2">M</option>
+              <option value="option3">L</option>
+              </select>
+              <label for="options" class="selectright"></label>
+              <select id="options" name="options">
+              <option value="option1">Colour</option>
+              <option value="option2">Colour</option>
+              <option value="option3">Colour</option>
+              </select>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+      <!-- <div class="box" id="box2" onclick="toggleBox(2)">
+        <h2>Middle Box</h2>
+        <div class="options">
+          <p>Select Color:</p>
+          <div class="colors">
+            <span class="color-option" style="background-color: orange"></span>
+            <span class="color-option" style="background-color: purple"></span>
+            <span class="color-option" style="background-color: pink"></span>
+          </div>
+          <p>Select Size:</p>
+          <div class="sizes">
+            <button class="size-option">Small</button>
+            <button class="size-option">Medium</button>
+            <button class="size-option">Large</button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="box" id="box3" onclick="toggleBox(3)">
+        <h2>Bottom Box</h2>
+        <div class="options">
+          <p>Select Color:</p>
+          <div class="colors">
+            <span class="color-option" style="background-color: yellow"></span>
+            <span class="color-option" style="background-color: brown"></span>
+            <span class="color-option" style="background-color: black"></span>
+          </div>
+          <p>Select Size:</p>
+          <div class="sizes">
+            <button class="size-option">Small</button>
+            <button class="size-option">Medium</button>
+            <button class="size-option">Large</button>
+          </div>
+        </div>
+      </div> -->
+      <div class="bottom">
+        <p>Free 2 Day Shipping</p>
+        <p>Total: <b>DKK: 360.00</b></p>
+      </div>
+      <button class="button" >+ Add to Cart</button>
+      <div  class="footer" style="text-align: end;">
+        <p ><i>@ powered by pumper</i></p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
